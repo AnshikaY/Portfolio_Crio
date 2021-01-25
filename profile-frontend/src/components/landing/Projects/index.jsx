@@ -15,6 +15,7 @@ export const Projects = () => {
     axios
       .get("https://api.github.com/user/repos", {
         params: {
+        //   type: "owner",     
           visibility: "public",
           per_page: 100,
           affiliation: "owner,collaborator",
